@@ -11,6 +11,7 @@ export default defineConfig({
     // devtools(),
     solidPlugin(),
   ],
+  base: '/crux-diagram/',
   server: {
     port: 3000,
   },
