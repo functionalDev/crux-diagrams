@@ -1,0 +1,43 @@
+import { langToCode } from "./languages";
+
+export const competitionHomepageUrls = {
+    dw: 'https://www.dw.com/en/top-stories/s-9097',
+    bbc: 'https://www.bbc.com/',
+    tagesschau: 'https://www.tagesschau.de/',
+    diaroDeNoticias: 'https://www.dn.pt/',
+    metro: 'https://www.readmetro.com/en/',
+};
+
+export const homepageUrls = {
+    [langToCode.GERMAN]: 'https://www.dw.com/de/themen/s-9077',
+    [langToCode.ENGLISH]: 'https://www.dw.com/en/top-stories/s-9097',
+    [langToCode.RUSSIAN]: 'https://www.dw.com/ru/%D1%82%D0%B5%D0%BC%D1%8B-%D0%B4%D0%BD%D1%8F/s-9119',
+    // [langToCode.CHINESE]: 'zh',
+    // [langToCode.CHINESE_TRADITIONAL]: 'zh-hant',
+    [langToCode.PORTUGUESE_BRAZIL]: 'https://www.dw.com/pt-br/not%C3%ADcias/s-7111',
+    [langToCode.ALBANIAN]: 'https://www.dw.com/sq/fokus/s-10250',
+    [langToCode.AMHARIC]: 'https://www.dw.com/am/%E1%8B%AD%E1%8B%98%E1%89%B5/s-11646',
+    [langToCode.ARABIC]: 'https://www.dw.com/ar/%D8%A7%D9%84%D8%B1%D8%A6%D9%8A%D8%B3%D9%8A%D8%A9/s-9106',
+    [langToCode.BENGALI]: 'https://www.dw.com/bn/%E0%A6%AC%E0%A6%BF%E0%A6%B7%E0%A7%9F/s-11929',
+    [langToCode.BOSNIAN]: 'https://www.dw.com/bs/teme/s-10037',
+    [langToCode.BULGARIAN]: 'https://www.dw.com/bg/%D0%BD%D0%B0%D1%87%D0%B0%D0%BB%D0%BE/s-10257',
+    [langToCode.CROATIAN]: 'https://www.dw.com/hr/teme/s-9747',
+    [langToCode.DARI]: 'https://www.dw.com/fa-af/%D8%AF%D9%88%D9%8A%DA%86%D9%87-%D9%88%D9%84%D9%87-%D8%AF%D8%B1%DB%8C/s-10259',
+    [langToCode.FRENCH]: 'https://www.dw.com/fr/actualit%C3%A9s/s-10261',
+    [langToCode.GREEK]: 'https://www.dw.com/el/%CE%B8%CE%B5%CE%BC%CE%B1%CF%84%CE%B1/s-10507',
+    [langToCode.HAUSA]: 'https://www.dw.com/ha/batutuwa/s-11603',
+    [langToCode.HINDI]: 'https://www.dw.com/hi/%E0%A4%96%E0%A4%AC%E0%A4%B0%E0%A5%87%E0%A4%82/s-11931',
+    [langToCode.INDONESIAN]: 'https://www.dw.com/id/beranda/s-11546',
+    [langToCode.KISWAHILI]: 'https://www.dw.com/sw/idhaa-ya-kiswahili/s-11588',
+    [langToCode.MACEDONIAN]: 'https://www.dw.com/mk/%D1%82%D0%B5%D0%BC%D0%B8/s-10339',
+    [langToCode.PASHTO]: 'https://www.dw.com/ps/%D8%AF%D9%88%D9%8A%DA%86%D9%87-%D9%88%D9%8A%D9%84%D9%87-%D9%BE%DA%9A%D8%AA%D9%88/s-11722',
+    [langToCode.PERSIAN]: 'https://www.dw.com/fa-ir/%D8%AF%D9%88%DB%8C%DA%86%D9%87-%D9%88%D9%84%D9%87-%D9%81%D8%A7%D8%B1%D8%B3%DB%8C/s-9993',
+    [langToCode.POLISH]: 'https://www.dw.com/pl/start/s-11394',
+    [langToCode.PORTUGUESE_AFRICA]: 'https://www.dw.com/pt-002/not%C3%ADcias/s-13918',
+    [langToCode.ROMANIAN]: 'https://www.dw.com/ro/focus/s-10575',
+    [langToCode.SERBIAN]: 'https://www.dw.com/sr/rubrike/s-10682',
+    [langToCode.SPANISH]: 'https://www.dw.com/es/actualidad/s-30684',
+    [langToCode.TURKISH]: 'https://www.dw.com/tr/g%C3%BCndem/s-10201',
+    [langToCode.UKRANIAN]: 'https://www.dw.com/uk/%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2%D0%BD%D0%B0/s-9874',
+    [langToCode.URDU]: 'https://www.dw.com/ur/%D8%B9%D9%86%D9%88%D8%A7%D9%86%D8%A7%D8%AA/s-11933',
+}

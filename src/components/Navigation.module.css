@@ -1,0 +1,44 @@
+.burgerButton {
+    user-select: none;
+    cursor: pointer;
+    border: 1px solid black;
+    display: grid;
+    place-items: center;
+    width: fit-content;
+    aspect-ratio: 1;
+    padding-inline: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 1.5rem;
+}
+
+.nav {
+    position: relative;
+}
+
+.sidebar {
+    min-width: 200px;
+    border-right: 1px solid black;
+    position: absolute;
+    z-index: 10;
+    background: white;
+    height: 90svh;
+    padding: 0;
+    li {
+        padding-inline: 10px;
+        list-style: none;
+        a {
+            text-decoration: none;
+            color: black;
+            width: 100%;
+            display: block;
+        }
+        
+        a:hover {
+        }
+    }
+    li:hover {
+        background: lightgreen;
+
+    }
+}
