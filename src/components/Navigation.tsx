@@ -17,6 +17,7 @@ export const Navigation = () => {
                 <li><a href={`/crux-diagrams/metric/${Metric.TTFB}`}>TTFB</a></li>
                 <li><a href={`/crux-diagrams/metric/${Metric.LCP}`}>LCP</a></li>
                 <li><a href={`/crux-diagrams/metric/${Metric.INP}`}>INP</a></li>
+                <li><a href={`/crux-diagrams/deviceType`}>Devices</a></li>
                 <li><a href="/crux-diagrams/competition">Competition</a></li>
             </ul>
         </Show>

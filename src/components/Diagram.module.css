@@ -13,7 +13,8 @@
     filter: drop-shadow(1px 1px 1px grey);
     padding: 10px;
     border-radius: 10px;
-    box-shadow: inset 0px 0px 5px 7px var(--border-color);
+    background: white;
+    box-shadow: inset 0px 0px 2px 4px var(--border-color);
     &.good {
         --border-color: #4ba77e;
     }
@@ -23,11 +24,15 @@
     &.poor {
         --border-color: #d63e35;
     }
+    &.none {
+        box-shadow: inset 0px 0px 1px 1px var(--border-color);
+        --border-color: darkgrey;
+    }
     h2, h6 {
         margin: 0;
+        color: darkslategrey;
     }
     h6 {
-        color: grey;
     }
 }
 .axe {
@@ -64,6 +69,7 @@
     filter: brightness(1.2);
 }
 .entry {
+    filter: drop-shadow(1px 1px 1px lightgrey);
     height: 100px;
     width: calc((100%)/25 - 1px);
     display: flex;

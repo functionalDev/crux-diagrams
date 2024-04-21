@@ -1,25 +1,11 @@
-import { For, createEffect } from "solid-js"
-import { cruxData } from "../data/dataStore";
+import { For } from "solid-js"
 import styles from './Diagram.module.css';
-import { CoreWebVitalRanking, Metric, getCvwRanking } from "../enums/cwv";
-createEffect(() => {
-    console.log(cruxData)
-})
-const getClassName = (key: string, metric: Metric) => {
-    if(!cruxData[key]) return '';
-    
-    const [lastEntry] = cruxData[key].slice(-1);
-    const ranking = getCvwRanking(metric)(lastEntry[metric].p75s);
-    if(ranking === CoreWebVitalRanking.GOOD){ return styles.good }
-    if(ranking === CoreWebVitalRanking.NEEDS_IMPROVEMENT){ return styles.ni }
-    if(ranking === CoreWebVitalRanking.POOR){ return styles.poor }
-    return ''
-}
+
 
 export const Diagram = props => {
     return (
-        <div className={[styles.diagramWrapper, getClassName(props.key, props.metric)].join(' ')}>
-            <h2> {props.title ||  props.key} </h2>
+        <div className={[props.className, styles.diagramWrapper].join(' ')}>
+            <h2> {props.title} </h2>
             <h6> {props.subtitle} </h6>
             <div className={styles.diagram}>
                 <div className={styles.axe}>
@@ -31,19 +17,24 @@ export const Diagram = props => {
                         )}
                     </For>
                 </div>
-                <For each={cruxData[props.key]} >{
+                <For each={props.dataList} >{
                     (entry) => (
                         <div className={styles.entry}>
-                            <div style={{height: (entry[props.metric].poor * 100) + '%'}} className={styles.poor}></div>
-                            <div style={{height: (entry[props.metric].ni * 100) + '%'}} className={styles.ni}></div>
-                            <div style={{height: (entry[props.metric].good * 100) + '%'}} className={styles.good} ></div>
+                            <For each={props.types} >{
+                                type => (
+                                    <div style={{
+                                        background: type.color,
+                                        height: (type.accessor(entry) * 100) + '%'}}>
+                                    </div>
+                                )
+                            }</For>
                             <span className={styles.date}>
                                 <span>
                                     {`${entry.firstDate.year}/${entry.firstDate.month}/${entry.firstDate.day}`}
                                 </span>
                                 <br></br>
                                 <span>
-                                    {entry[props.metric].p75s}ms
+                                    {props.getInfo?.(entry)}
                                 </span>
                             </span>
                         </div>

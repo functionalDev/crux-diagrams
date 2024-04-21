@@ -1,8 +1,7 @@
 import { For } from 'solid-js';
 import styles from './MetricPage.module.css';
-import { Diagram } from '../components/Diagram';
 import { langToCode } from '../data/languages';
-import { homepageUrls } from '../data/sampleUrls';
+import { CvwDiagram } from '../components/CvwDiagram';
 
 const defaultMetric = 'experimental_time_to_first_byte';
 
@@ -15,7 +14,8 @@ function MetricPage(props) {
         <For each={Object.values(langToCode)}>
           {
             (langCode) => (
-              <Diagram
+              <CvwDiagram
+                title={langCode}
                 metric={props.params.metric || defaultMetric} 
                 key={langCode}/>
             )

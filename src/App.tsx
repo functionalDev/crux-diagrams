@@ -4,6 +4,7 @@ import { Metric } from './enums/cwv.js';
 import { Navigation } from './components/Navigation';
 import styles from './App.module.css';
 import { CompetitionPage } from './pages/CompetitionPage';
+import { DeviceTypePage } from './pages/DeviceTypePage';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/" component={MetricPage} />  
         <Route path="/crux-diagrams/" component={MetricPage} />  
         <Route path="/crux-diagrams/metric/:metric" component={MetricPage} />  
+        <Route path="/crux-diagrams/devicetype" component={DeviceTypePage} />  
         <Route path="/crux-diagrams/competition" component={CompetitionPage} />      
       </HashRouter>
     </div>

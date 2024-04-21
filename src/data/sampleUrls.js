@@ -1,11 +1,16 @@
 import { langToCode } from "./languages";
 
 export const competitionHomepageUrls = {
-    dw: 'https://www.dw.com/en/top-stories/s-9097',
+    dw: 'https://www.dw.com/',
     bbc: 'https://www.bbc.com/',
-    tagesschau: 'https://www.tagesschau.de/',
-    diaroDeNoticias: 'https://www.dn.pt/',
-    metro: 'https://www.readmetro.com/en/',
+    'Xinhua News Agency': 'https://english.news.cn/',
+    'China Central Television': 'https://english.cctv.com/',
+    'peoples daily': 'http://en.people.cn/',
+    'afrol news': 'http://afrol.com/',
+    'swiss': 'https://www.keystone-sda.ch/',
+    'global voices': 'https://globalvoices.org/',
+    'france24': 'https://www.france24.com/',
+    'word socialist web site': 'https://www.wsws.org/',
 };
 
 export const homepageUrls = {
