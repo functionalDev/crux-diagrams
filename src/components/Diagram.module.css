@@ -23,8 +23,11 @@
     &.poor {
         --border-color: #d63e35;
     }
-    h2 {
+    h2, h6 {
         margin: 0;
+    }
+    h6 {
+        color: grey;
     }
 }
 .axe {

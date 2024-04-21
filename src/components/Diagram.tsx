@@ -19,7 +19,8 @@ const getClassName = (key: string, metric: Metric) => {
 export const Diagram = props => {
     return (
         <div className={[styles.diagramWrapper, getClassName(props.key, props.metric)].join(' ')}>
-            <h2> {props.title || props.key} </h2>
+            <h2> {props.title ||  props.key} </h2>
+            <h6> {props.subtitle} </h6>
             <div className={styles.diagram}>
                 <div className={styles.axe}>
                     <For each={[0.25,0.5,0.75, 1].reverse()}>

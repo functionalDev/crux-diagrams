@@ -2,6 +2,7 @@ import { For } from 'solid-js';
 import styles from './MetricPage.module.css';
 import { Diagram } from '../components/Diagram';
 import { langToCode } from '../data/languages';
+import { homepageUrls } from '../data/sampleUrls';
 
 function MetricPage(props) {
   return (
@@ -12,7 +13,9 @@ function MetricPage(props) {
         <For each={Object.values(langToCode)}>
           {
             (langCode) => (
-              <Diagram metric={props.params.metric} key={langCode}></Diagram>
+              <Diagram
+                metric={props.params.metric} 
+                key={langCode}/>
             )
           }
         </For>
