@@ -11,7 +11,7 @@ function App() {
       <Navigation/>
       <Router>
         <Route path="/" component={MetricPage} />  
-        <Route path="/crux-diagrams/" component={() => <Navigate href={"/crux-diagrams/metric/experimental_time_to_first_byte"} />} />  
+        <Route path="/crux-diagrams/" component={MetricPage} />  
         <Route path="/crux-diagrams/metric/:metric" component={MetricPage} />  
         <Route path="/crux-diagrams/competition" component={CompetitionPage} />      
       </Router>
