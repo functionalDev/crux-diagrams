@@ -1,4 +1,4 @@
-import { Navigate, Route, Router } from '@solidjs/router';
+import { HashRouter, Navigate, Route, Router } from '@solidjs/router';
 import MetricPage from './pages/MetricPage';
 import { Metric } from './enums/cwv.js';
 import { Navigation } from './components/Navigation';
@@ -9,12 +9,12 @@ function App() {
   return (
     <div class={styles.app}>
       <Navigation/>
-      <Router>
+      <HashRouter >
         <Route path="/" component={MetricPage} />  
         <Route path="/crux-diagrams/" component={MetricPage} />  
         <Route path="/crux-diagrams/metric/:metric" component={MetricPage} />  
         <Route path="/crux-diagrams/competition" component={CompetitionPage} />      
-      </Router>
+      </HashRouter>
     </div>
   );
 }
