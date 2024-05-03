@@ -2,6 +2,7 @@ import { langToCode } from "./languages";
 
 export const competitionHomepageUrls = {
     dw: 'https://www.dw.com/',
+    'dw AMP': 'https://amp.dw.com/',
     bbc: 'https://www.bbc.com/',
     'Xinhua News Agency': 'https://english.news.cn/',
     'China Central Television': 'https://english.cctv.com/',
@@ -17,8 +18,8 @@ export const homepageUrls = {
     [langToCode.GERMAN]: 'https://www.dw.com/de/themen/s-9077',
     [langToCode.ENGLISH]: 'https://www.dw.com/en/top-stories/s-9097',
     [langToCode.RUSSIAN]: 'https://www.dw.com/ru/%D1%82%D0%B5%D0%BC%D1%8B-%D0%B4%D0%BD%D1%8F/s-9119',
-    // [langToCode.CHINESE]: 'zh',
-    // [langToCode.CHINESE_TRADITIONAL]: 'zh-hant',
+    [langToCode.CHINESE]: 'https://www.dw.com/zh/%E5%9C%A8%E7%BA%BF%E6%8A%A5%E5%AF%BC/s-9058',
+    [langToCode.CHINESE_TRADITIONAL]: 'https://www.dw.com/zh-hant/%E7%B7%9A%E4%B8%8A%E5%A0%B1%E5%B0%8E/s-9058',
     [langToCode.PORTUGUESE_BRAZIL]: 'https://www.dw.com/pt-br/not%C3%ADcias/s-7111',
     [langToCode.ALBANIAN]: 'https://www.dw.com/sq/fokus/s-10250',
     [langToCode.AMHARIC]: 'https://www.dw.com/am/%E1%8B%AD%E1%8B%98%E1%89%B5/s-11646',
